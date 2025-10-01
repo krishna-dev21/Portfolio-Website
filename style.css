@@ -1,0 +1,1089 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+}
+
+
+
+.wrapper
+{
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+.container
+{
+     width:100vw;     
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25rem;
+    align-items: center;
+}
+
+
+.navleft
+{
+    display: flex;
+    position: relative;
+}
+
+.navleft p
+{
+  display: flex;
+  position: absolute;
+  right: -1.5rem;
+  bottom: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navright
+{
+    display: flex;
+    column-gap: 3rem
+}
+
+.navright a
+{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+
+}
+
+.hero-section
+{
+    display: flex;
+     justify-content:space-between; 
+    /* margin-left: 100px; */
+    padding: 0 3rem;
+    align-items: center;
+    margin-top: 50px;
+    position: sticky;
+}
+
+.hero-left
+{    
+    position: absolute;
+
+}
+
+.role
+{
+    color:blueviolet;
+    font-weight: bold;
+}
+
+.hero-left-hi
+{
+    font-size: 2.5rem;
+    font-weight: lighter;
+
+    
+}
+
+.hero-left-iam
+{
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: 350;
+}
+
+.hero-left-about
+{
+    margin-top: 20px ;
+    font-size: 1.09rem;
+    font-style: italic;
+}
+
+.hero-left-button
+{
+    margin-top: 20px;
+    height: 3rem;
+    width: 7rem;
+    background-color: #D91656;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    margin-left: 10%;
+    position: sticky;
+    left: -10rem;
+    box-shadow: 1px 1px 4px black;
+}
+
+.hero-left-button  a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+
+.hero-right
+{
+    display: flex;
+    margin-left: 750px;
+    
+    position: relative;
+    margin-bottom: 450px;
+    
+    
+
+}
+
+
+
+.userimage
+{
+    position: absolute;
+    padding: 2rem;
+    /* transform: all 1s; */
+    animation: scaleimage  5s linear infinite;
+    
+}
+ 
+
+@keyframes scaleimage{
+
+    0%
+    {
+       filter: grayscale(1);
+       transform: scale(1);
+    }
+
+    50%
+    {
+          filter: grayscale(0);
+          transform: scale(1.1);
+          box-shadow: 3px 3px 10px black;
+    }
+
+    100%
+    {
+        filter: grayscale(1);
+        transform: scale(1);
+    }
+    
+}
+
+.zigzag
+{
+    position: absolute;
+    animation: zigzagmove 5s linear infinite;
+}
+
+@keyframes zigzagmove {
+
+    0%
+    {
+        transform: translateX(0);
+
+    }
+
+    50%
+    {
+        transform: translateX(20px);
+    }
+}
+
+.cube
+{
+    position: absolute;
+    margin-left: 18.5rem;
+    margin-top: -20px;
+    animation: cuberotate 5s linear infinite;
+}
+
+@keyframes cuberotate {
+    0%
+    {
+       transform:  rotateY(0deg) translateY(0px);
+    }
+
+    50%
+    {
+         transform: rotateY(180deg) translateY(10px);
+
+    }
+
+    100%
+    {
+        transform: rotateY(0deg) translateY(0px);
+    }
+}
+
+
+
+
+.plus
+{
+    position: absolute;
+    margin-left: 10rem;
+    animation: plusmove 5s linear infinite;
+}
+
+@keyframes plusmove 
+{
+    0%
+    {
+     transform: translateY(0px);
+    }
+
+    50%
+    {
+        transform: translateY(20px);
+    }
+
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+
+.circle
+{    
+    position: absolute;
+    margin-top: 18rem;
+    animation: circlemove 5s linear infinite;
+}
+
+@keyframes circlemove 
+{
+   0%
+   {
+       transform: translateY(0px);
+   }
+   
+   50%
+   {
+        transform: translateY(40px);
+   }
+
+   100%
+   {
+         transform: translateY(0px);
+   }
+}
+
+.dots
+{
+    position: absolute;
+    margin-top: 20rem;
+    margin-left: 18rem;
+    animation: dotsmove 5s linear infinite;
+}
+
+
+@keyframes dotsmove 
+{
+   0%
+   {
+       transform: translateY(0px);
+   }
+   
+   50%
+   {
+        transform:  translateY(20px);
+   }
+
+   100%
+   {
+         transform: translateY(0px);
+   }
+}
+
+
+.fadded
+{
+    font-size:  7rem;
+    margin-left: 130px;
+    margin-top: 50px;
+    user-select: none;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.466);
+    opacity:.4;
+    
+    
+} 
+
+ /* project section start */
+
+.project-section
+{
+    height: 2500px;
+    background-color: rgb(231, 231, 231);
+    margin-top: -30px;
+    width: 100vw;
+}
+
+.project-heading
+{   height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+#head{
+      font-size: 5rem;
+      color: #D91656;
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+.real-project
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+            /* p1projectcard starts */
+.fordimensions
+{
+    height: 500px;
+    width: 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 10px 10px 50px black;
+    
+}
+
+        
+
+.real-project1
+{
+    margin-left: 10%;
+    background-image: url(./projects/Project1.png);
+    position: relative;
+    display: flex;
+    
+
+}
+
+.real-project1::after
+{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f80;
+    z-index: 0;
+
+}
+
+.real-project1::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg ,#343d68, #343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s ease-out;
+    z-index: 1;
+    
+}
+
+.real-project1:hover::before  
+{
+    transform: scaleX(1);
+    
+}
+
+.real-project1-left
+{   position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    width: 60%;
+    margin-top: 110px;
+    margin-left: 100px;
+    gap: 10px;
+    
+
+}
+
+.real-project1:hover  .real-project1-left
+{
+    transform: scale(1.06);
+    transition: all 1s;
+}
+
+.p1language
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.p1langimages
+{
+    height: 50px;
+}
+
+.p1name
+{
+    font-size: 2rem;
+    color: white;
+
+}
+
+.p1description
+{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.p1button
+{
+    margin-left: 0;
+}
+
+.real-project1-right
+{
+    position: absolute;
+    z-index: 2;
+    right: -70px;
+    top: -100px;
+    opacity: 0;
+    transition: all .5s;
+    
+}
+
+.real-project1-right  h1
+{
+    color: white;
+    font-size: 16rem;
+
+}
+
+.real-project1:hover  .real-project1-right{
+    opacity: 1;
+}
+
+           /* p1project card end */
+               
+           /* p2project card start */
+           .real-project2
+           {
+               margin-left: 20%;
+               background-image: url(./projects/Project2.png);
+               position: relative;
+               display: flex;
+               
+           
+           }
+           
+           .real-project2::after
+           {
+               content:"";
+               position: absolute;
+               top: 0;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               background-color: #1f1f1f80;
+               z-index: 0;
+           
+           }
+           
+           .real-project2::before
+           {
+               content: "";
+               position: absolute;
+               top: 0;
+               left: 0;
+               right: 0;
+               bottom: 0;
+               background: linear-gradient(45deg ,#343d68, #343d68be,#343d687c);
+               transform: scaleX(0);
+               transform-origin: left;
+               transition: all 1s ease-out;
+               z-index: 1;
+               
+           }
+           
+           .real-project2:hover::before  
+           {
+               transform: scaleX(1);
+               
+           }
+           
+           .real-project2-left
+           {   position: absolute;
+               display: flex;
+               flex-direction: column;
+               z-index: 2;
+               width: 60%;
+               margin-top: 110px;
+               left: 40%;
+               gap: 10px;
+               
+           
+           }
+           
+           .real-project2:hover  .real-project2-left
+           {
+               transform: scale(1.06);
+               transition: all 1s;
+           }
+           
+           .p2language
+           {
+               display: flex;
+               flex-wrap: wrap;
+               gap: 10px;
+               
+           }
+           
+           .p2langimages
+           {
+               height: 50px;
+           }
+           
+           .p2name
+           {
+               font-size: 2rem;
+               color: white;
+           
+           }
+           
+           .p2description
+           {
+               color: white;
+               font-size: 1.2rem;
+               margin-left: 10px;
+               font-style: italic;
+           }
+           
+           .p2button
+           {
+               margin-left: 0;
+           }
+           
+           .real-project2-right
+           {
+               position: absolute;
+               z-index: 2;
+               left: -70px;
+               top: -100px;
+               opacity: 0;
+               transition: all .5s;
+               
+           }
+           
+           .real-project2-right  h1
+           {
+               color: white;
+               font-size: 16rem;
+           
+           }
+           
+           .real-project2:hover  .real-project2-right{
+               opacity: 1;
+           }
+           
+           /* p2project card end */
+
+          /* p3project card start */
+
+          .real-project3
+          {
+              margin-left: 10%;
+              background-image: url(./projects/Project3.png);
+              position: relative;
+              display: flex;
+              
+          
+          }
+          
+          .real-project3::after
+          {
+              content:"";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #1f1f1f80;
+              z-index: 0;
+          
+          }
+          
+          .real-project3::before
+          {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(45deg ,#343d68, #343d68be,#343d687c);
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: all 1s ease-out;
+              z-index: 1;
+              
+          }
+          
+          .real-project3:hover::before  
+          {
+              transform: scaleX(1);
+              
+          }
+          
+          .real-project3-left
+          {   position: absolute;
+              display: flex;
+              flex-direction: column;
+              z-index: 2;
+              width: 60%;
+              margin-top: 140px;
+              margin-left: 100px;
+              gap: 6px;
+              
+          
+          }
+          
+          .real-project3:hover  .real-project3-left
+          {
+              transform: scale(1.06);
+              transition: all 1s;
+          }
+          
+          .p3language
+          {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              
+          }
+          
+          .p3langimages
+          {
+              height: 50px;
+          }
+          
+          .p3name
+          {
+              font-size: 2rem;
+              color: white;
+          
+          }
+          
+          .p3description
+          {
+              color: white;
+              font-size: 1.2rem;
+              margin-left: 10px;
+              font-style: italic;
+          }
+          
+          .p3button
+          {
+              margin-left: 0;
+          }
+          
+          .real-project3-right
+          {
+              position: absolute;
+              z-index: 2;
+              right: -70px;
+              top: -100px;
+              opacity: 0;
+              transition: all .5s;
+              
+          }
+          
+          .real-project3-right  h1
+          {
+              color: white;
+              font-size: 16rem;
+          
+          }
+          
+          .real-project3:hover  .real-project3-right{
+              opacity: 1;
+          }
+
+
+          /* p3 project card end */
+
+          /* p4project card start */
+          .real-project4
+          {
+              left: 20%;
+              background-image: url(./projects/Project4.png);
+              position: relative;
+              display: flex;
+              
+          
+          }
+          
+          .real-project4::after
+          {
+              content:"";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #1f1f1f80;
+              z-index: 0;
+          
+          }
+          
+          .real-project4::before
+          {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: linear-gradient(45deg ,#343d68, #343d68be,#343d687c);
+              transform: scaleX(0);
+              transform-origin: left;
+              transition: all 1s ease-out;
+              z-index: 1;
+              
+          }
+          
+          .real-project4:hover::before  
+          {
+              transform: scaleX(1);
+              
+          }
+          
+          .real-project4-left
+          {   position: absolute;
+              display: flex;
+              flex-direction: column;
+              z-index: 2;
+              width: 60%;
+              margin-top: 110px;
+              margin-left: 500px;
+              gap: 10px;
+              
+          
+          }
+          
+          .real-project4:hover  .real-project4-left
+          {
+              transform: scale(1.06);
+              transition: all 1s;
+          }
+          
+          .p4language
+          {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+              
+          }
+          
+          .p4langimages
+          {
+              height: 50px;
+          }
+          
+          .p4name
+          {
+              font-size: 2rem;
+              color: white;
+          
+          }
+          
+          .p4description
+          {
+              color: white;
+              font-size: 1.2rem;
+              margin-left: 10px;
+              font-style: italic;
+          }
+          
+          .p4button
+          {
+              margin-left: 0;
+          }
+          
+          .real-project4-right
+          {
+              position: absolute;
+              z-index: 2;
+              top: -100px;
+              left: -20px;
+              opacity: 0;
+              transition: all .5s;
+              
+          }
+          
+          .real-project4-right  h1
+          {
+              color: white;
+              font-size: 16rem;
+          
+          }
+          
+          .real-project4:hover  .real-project4-right{
+              opacity: 1;
+          }
+                    
+          /* p4project card end */
+
+
+          /* skill section start */
+               
+.skills-section
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+
+
+.skills-section-left
+{
+    height: 500px;
+    width: 500px;
+    /* margin-top:10%; */
+      
+}
+
+.redup
+{  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#M
+{
+    font-size: 6rem;
+    color: #D91656;
+}
+
+#e
+{
+    font-size: 3rem;
+    color: #D91656;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    
+}
+
+#mytech
+{
+    font-size: 3rem;
+    color: #D91656;
+    font-weight: 400;
+    margin-top: -5%;
+}
+
+.black p
+{
+    margin-top: 2rem;
+    font-family: sans-serif;
+    
+
+}
+
+
+.skills-section-right
+{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.alllanguages
+{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1.3rem;
+   align-self: baseline;
+}
+
+.blob-style{
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:-5;
+    transform:translate(-50%, -50%);
+    animation: blobAnimate 3s linear infinite;
+  }
+
+  
+  
+  @keyframes blobAnimate {
+    50%{
+      top:54%;
+      left:46%;
+    }
+  }
+  
+
+.langimg
+{
+    height: 90px;
+    gap: 40px;
+    
+    
+}
+
+          /* skill section end */
+
+
+.informationform
+{
+    height: 800px;
+    width: 100%;
+    background-color:rgb(231, 231, 231) ;
+    position: relative;
+    
+
+}
+
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+    padding: 0 1.2rem;
+    
+}
+
+.textsection
+{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#contactme
+{
+    font-size: 5rem;
+    color: #D91656;
+    font-weight: 500;
+    font-size: 6rem;
+}
+
+#questions
+{
+    font-size: 3rem;
+    color: #343d68;
+    font-weight: 400;
+}
+
+.formsection
+{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 100%;
+    margin: 4rem 20%;
+    gap: 1rem;
+}
+
+.forinputsize
+{
+    width: 60%;
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 5px black;
+}
+
+.messagetext
+{
+    height: 17rem;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.sendbutton
+{
+    background-color: #D91656;
+    height: 4rem;
+    width: 20rem;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+    bottom: 2rem;
+    left: 15.5rem;
+}
+
+.sendbutton a
+{
+   text-decoration: none;
+   color: white;
+   font-size: 1.5rem;
+}
+
+
+.lastsection
+{   
+    height: 17rem;
+    background-color:#343d68 ;
+    position: relative;
+}
+
+.lastblue
+{   height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+}
+
+.lastleft
+{
+    display: flex;
+    column-gap: 4rem;
+}
+
+.lastright
+{
+    display: flex;
+    gap: 2rem;
+}
+
+.lastblue a
+{
+    text-decoration:
+     none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
